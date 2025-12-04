@@ -5,6 +5,7 @@ import Products from "../Pages/Products";
 import MainLayouts from "../Layouts/MainLayouts";
 import ErrorPage from "../Pages/ErrorPage";
 import Wishlist from "../Pages/Wishlist";
+import ProductDetails from "../Pages/ProductDetails";
 
 //named export
 // export const router = createBrowserRouter([
@@ -34,6 +35,10 @@ import Wishlist from "../Pages/Wishlist";
         {
             path:'/wishlist',
             element:<Wishlist></Wishlist>,
+        },
+        {
+            path:'/product/:id',
+            element:<ProductDetails></ProductDetails>,
         },
     ]
   },
