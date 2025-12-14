@@ -5,9 +5,9 @@ import { Link } from 'react-router';
 import useProducts from '../Hooks/useProducts';
 
 const Home = () => {
-    const products = useLoaderData()
-    const data = useProducts();
-    console.log(data)
+    // const products = useLoaderData()
+    const {products, loading, error} = useProducts();
+    // console.log(data)
     // console.log(products)
     const featuredProducts = products.slice(0, 6);
     return (
